@@ -88,13 +88,18 @@ SELECT * FROM week_one LIMIT 100 -->DROP (flight sample)
 --------------------------------------------------------------------------------------------
 -- DESCRIPTION OF TABLES BELOW ARE PROVIDED ALREADY. NO NEED TO DO EDA AT THIS TIME.
 -- -- Table: flights
--- SELECT * FROM flights LIMIT 100
+SELECT * FROM flights LIMIT 100
 
 -- -- Table: passengers
--- SELECT * FROM passengers LIMIT 100
+SELECT * FROM passengers LIMIT 100
 
 -- -- Table: fuel_comsumption
--- SELECT * FROM fuel_comsumption LIMIT 100
+SELECT * FROM fuel_comsumption LIMIT 100
 
 -- -- Table: flights_test
--- SELECT * FROM flights_test LIMIT 100
+SELECT * FROM flights_test LIMIT 100
+
+-- Query to pull the 200K
+SELECT * FROM flights ORDER BY random() LIMIT 200000
+
+
