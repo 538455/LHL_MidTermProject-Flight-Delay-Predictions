@@ -1,5 +1,8 @@
 instructions/*
+#Files that are too large to upload
+data/raw/2020.csv
+data/raw/2018.csv
+data/raw/2019.csv 
+data/raw/world-airports.csv
 
-src/modules/~$pg_EDA.xlsx
-src/ipynb/2018.csv
-src/ipynb/.ipynb_checkpoints/2018-checkpoint.csv
+.gitignore
