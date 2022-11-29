@@ -1,10 +1,14 @@
 instructions/*
-#Files that are too large to upload
+#Raw files that are too large to upload
+## Raw Weather Data -> can be found at this link: https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_year/
 data/raw/2020.csv
 data/raw/2018.csv
 data/raw/2019.csv 
+
+## Raw Airport Data -> can be found at this link: https://ourairports.com/airports.html   (on top, Data -> get the csv version)
 data/raw/world-airports.csv
-data/processed/flights_enrichment_weather.csv
+
+## Enriched Flight Data (Produced from the flights_enrichment.ipynb)
 data/processed/flights_enriched.csv
 
 .gitignore
