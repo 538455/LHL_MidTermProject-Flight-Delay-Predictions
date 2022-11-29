@@ -5,7 +5,8 @@ data/raw/2018.csv
 data/raw/2019.csv 
 data/raw/world-airports.csv
 data/processed/flights_enrichment_weather.csv
-
+data/processed/flights_enriched.csv
 
 .gitignore
+
 
