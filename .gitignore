@@ -1,5 +1,16 @@
 instructions/*
+#Raw files that are too large to upload
+## Raw Weather Data -> can be found at this link: https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_year/
+data/raw/2020.csv
+data/raw/2018.csv
+data/raw/2019.csv 
 
-src/modules/~$pg_EDA.xlsx
-src/ipynb/2018.csv
-src/ipynb/.ipynb_checkpoints/2018-checkpoint.csv
+## Raw Airport Data -> can be found at this link: https://ourairports.com/airports.html   (on top, Data -> get the csv version)
+data/raw/world-airports.csv
+
+## Enriched Flight Data (Produced from the flights_enrichment.ipynb)
+data/processed/flights_enriched.csv
+
+.gitignore
+
+
