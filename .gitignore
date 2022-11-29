@@ -11,12 +11,15 @@ data/raw/world-airports.csv
 ## Enriched Flight Data (Produced from the flights_enrichment.ipynb)
 data/processed/flights_enriched.csv
 
-
 ## Passenger Data
 data/raw/passengers_w_departuresPerformed(29Nov).csv
 
 ## Test Data
 data/raw/FLIGHTS_TEST_RAW.csv
+
+## Compliete list of flights per airport
+data/raw/date_origin_dest.csv
+
 
 .gitignore
 
