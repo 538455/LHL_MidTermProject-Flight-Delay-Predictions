@@ -99,5 +99,96 @@ ORDER BY op_carrier_fl_num;
 SELECT DISTINCT(fl_date) FROM flights_test
 ORDER BY fl_date;
 
+--PASSENGERS TABLE
+--Count rows in passenger table
+SELECT * FROM passengers LIMIT 10;
 
+--Count rows of 2018 and 2019 for domestic US flights only
+SELECT COUNT(*) FROM passengers
+WHERE (year = 2018 OR year = 2019)
+AND (origin_country = 'US' AND dest_country = 'US');
+
+--Select all columns of potential interest
+SELECT 
+	departures_performed, 
+	payload, 
+	seats,
+	passengers,
+	freight,
+	mail,
+	distance,
+	ramp_to_ramp,
+	air_time,
+	unique_carrier,
+	airline_id,
+	origin,
+	dest,
+	aircraft_group,
+	aircraft_type,
+	aircraft_config,
+	year,
+	month,
+	distance_group,
+	class
+FROM passengers
+WHERE (origin NOT LIKE '%0%' AND origin NOT LIKE '%1%' AND origin NOT LIKE '%2%' AND origin NOT LIKE '%3%'
+	   AND origin NOT LIKE '%4%' AND origin NOT LIKE '%5%' AND origin NOT LIKE '%6%'
+	   AND origin NOT LIKE '%7%' AND origin NOT LIKE '%8%' AND origin NOT LIKE '%9%')
+	   AND (year = 2018 OR year = 2019) 
+	   AND (origin_country = 'US' AND dest_country = 'US');
+	   
+--Count relevant rows
+SELECT COUNT(*) FROM passengers
+WHERE (origin NOT LIKE '%0%' AND origin NOT LIKE '%1%' AND origin NOT LIKE '%2%' AND origin NOT LIKE '%3%'
+	   AND origin NOT LIKE '%4%' AND origin NOT LIKE '%5%' AND origin NOT LIKE '%6%'
+	   AND origin NOT LIKE '%7%' AND origin NOT LIKE '%8%' AND origin NOT LIKE '%9%')
+	   AND (year = 2018 OR year = 2019) 
+	   AND (origin_country = 'US' AND dest_country = 'US');
+
+SELECT DISTINCT distance_group FROM passengers LIMIT 50;
+
+--Select all features to answer EDA question 9 (use origin airport)
+SELECT 
+	origin,
+	SUM(departures_performed) AS total_departures, 
+	SUM(passengers) AS total_departing_passengers,
+	year,
+	month
+FROM passengers
+WHERE 
+	(origin NOT LIKE '%0%' AND origin NOT LIKE '%1%' AND origin NOT LIKE '%2%' AND origin NOT LIKE '%3%'
+		AND origin NOT LIKE '%4%' AND origin NOT LIKE '%5%' AND origin NOT LIKE '%6%'
+		AND origin NOT LIKE '%7%' AND origin NOT LIKE '%8%' AND origin NOT LIKE '%9%')
+	AND (dest NOT LIKE '%0%' AND dest NOT LIKE '%1%' AND dest NOT LIKE '%2%' AND dest NOT LIKE '%3%'
+		AND dest NOT LIKE '%4%' AND dest NOT LIKE '%5%' AND dest NOT LIKE '%6%'
+		AND dest NOT LIKE '%7%' AND dest NOT LIKE '%8%' AND dest NOT LIKE '%9%')
+	AND (year = 2018 OR year = 2019) 
+	AND (origin_country = 'US' AND dest_country = 'US')
+GROUP BY origin, year, month;
+
+--Select all features to answer EDA question 9 (use dest airport)
+SELECT 
+	dest,
+	SUM(departures_performed) AS total_arrivals, 
+	SUM(passengers) AS total_arriving_passengers,
+	year,
+	month
+FROM passengers
+WHERE 
+	(origin NOT LIKE '%0%' AND origin NOT LIKE '%1%' AND origin NOT LIKE '%2%' AND origin NOT LIKE '%3%'
+		AND origin NOT LIKE '%4%' AND origin NOT LIKE '%5%' AND origin NOT LIKE '%6%'
+		AND origin NOT LIKE '%7%' AND origin NOT LIKE '%8%' AND origin NOT LIKE '%9%')
+	AND (dest NOT LIKE '%0%' AND dest NOT LIKE '%1%' AND dest NOT LIKE '%2%' AND dest NOT LIKE '%3%'
+		AND dest NOT LIKE '%4%' AND dest NOT LIKE '%5%' AND dest NOT LIKE '%6%'
+		AND dest NOT LIKE '%7%' AND dest NOT LIKE '%8%' AND dest NOT LIKE '%9%')
+	AND (year = 2018 OR year = 2019) 
+	AND (origin_country = 'US' AND dest_country = 'US')
+GROUP BY dest, year, month;
+
+--Explore Fuel Comsumption Table
+--Count values in fuel consumption table
+SELECT COUNT(*) FROM fuel_comsumption;
+
+--Explore 
+SELECT * FROM fuel_comsumption LIMIT 10;
 
