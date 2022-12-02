@@ -20,6 +20,10 @@ data/raw/FLIGHTS_TEST_RAW.csv
 ## Compliete list of flights per airport
 data/raw/date_origin_dest.csv
 
+#Final enriched data
+data/processed/Enriched-flights_sample_train.csv
+data/processed/Enriched-flights_sample_test.csv
+data/processed/Enriched-flights_test.csv
 
 .gitignore
 
