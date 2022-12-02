@@ -25,7 +25,11 @@ data/raw/200K_random(2Dec).csv
 data/raw/Cleaned-flights_sample_Bigtesting(2Dec).csv
 data/processed/Enriched-flights_BIGtest(2dec).csv
 
+#Models
+src/pickles/SVMmodel.pkl
+
 .gitignore
+
 
 
 
