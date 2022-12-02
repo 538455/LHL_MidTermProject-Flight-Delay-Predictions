@@ -20,6 +20,11 @@ data/raw/FLIGHTS_TEST_RAW.csv
 ## Compliete list of flights per airport
 data/raw/date_origin_dest.csv
 
+# Pull from 2 Dec to do a bigger test
+data/raw/200K_random(2Dec).csv
+data/raw/Cleaned-flights_sample_Bigtesting(2Dec).csv
+data/processed/Enriched-flights_BIGtest(2dec).csv
+
 .gitignore
 
 
