@@ -25,7 +25,7 @@
     - Very different from one another  due to the right-tailed distribution
 ![](/figures/figure2.png)
 
-    - **Weather**
+- **Weather**
         - Flight lateness most correlated with thunder and fog
 ![](/figures/figure3.png)
     - **Flight Speed with Departure Delay**
