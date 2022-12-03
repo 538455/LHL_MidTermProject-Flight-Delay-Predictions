@@ -36,7 +36,9 @@
         - number of arriving and outgoing planes and number of passengers all closely correlated
     ![](/figures/figure4.png)
 
-**Feature Engineering** (Seb can you do more in this part?)
+**Feature Engineering** 
+
+(Seb can you do more in this part?)
     - weather (Seb to add more info!)
     - ID column to join all collected information into a single table to run our models on
 
