@@ -28,11 +28,11 @@
 - **Weather**
         - Flight lateness most correlated with thunder and fog
 ![](/figures/figure3.png)
-    - **Flight Speed with Departure Delay**
+- **Flight Speed with Departure Delay**
         -  mean of flights with no departure delay = 6.6 miles/minute
         - mean of flights with no departure delay = 6.8 miles/minute
         - used a z-test to demonstrate that these are *not* from the same distribution
-    - **Airport Busy-ness**
+- **Airport Busy-ness**
         - number of arriving and outgoing planes and number of passengers all closely correlated
     ![](/figures/figure4.png)
 
