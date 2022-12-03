@@ -75,7 +75,7 @@ This project was completed by:
   - Airport busyness scores were joined with our flights table on arrival/departure airport.
 
 - Turned categorical variables into dummy variables
-- More details on feature engineering can be found [here](src/ipynb/Step_2-Feature_Engineering.ipynb).
+- More details on feature engineering can be found [here](src/ipynb/Step_3-Modeling.ipynb).
   
   
 
