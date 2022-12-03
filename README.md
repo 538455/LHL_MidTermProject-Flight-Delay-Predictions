@@ -8,6 +8,10 @@ This project was completed by:
 - Predict lateness of flights in Jan 2020 using a regression model 
 - Create machine learning model based on US domestic flights from 2018 and 2019
 
+## BLUF
+
+Our predictions can be found [here](output/XGBoostReg_tuned.csv).
+
 ## Process
 **Data Import**
 - Pulled 2x 200K sample from the provided PostgreSQL DB. The second sample was used for testing the model on a similar scale as the January 2020 data;
