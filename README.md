@@ -87,7 +87,7 @@ This project was completed by:
     - Random Forest Classifier
     - XGBoost --> **best results!**
 
-- More details on modeling can be found [here](src/ipynb/Step_2-Modeling.ipynb).
+- More details on modeling can be found [here](src/ipynb/Step_3-Modeling.ipynb).
 
 
 
