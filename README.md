@@ -37,7 +37,7 @@ This project was completed by:
 <br/><br/>
 
 - **Arrival Delays by Month**
-    - Flights were most late, on average, in June. 
+    - Flights were mostly late, on average, in June. 
 <br/><br/>
 
 - **Mean and Median Lateness**
@@ -47,7 +47,7 @@ This project was completed by:
 
 - **Weather**
   - Flight lateness most correlated with thunder and fog
-  - 
+  
     ![](/figures/figure3.png)
 <br/><br/>
 
