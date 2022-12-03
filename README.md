@@ -10,7 +10,7 @@ This project was completed by:
 
 ## BLUF
 
-Our predictions can be found [here](output/XGBoostReg_tuned.csv).
+Our predictions can be found [here](sample_submission.csv).
 
 ## Process
 **Data Import**
