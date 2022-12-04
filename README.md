@@ -107,19 +107,19 @@ Our predictions can be found [here](sample_submission.csv).
 <br/><br/>
 
 - Results - Train/Test split: 
-  - RMSE: 
-  - MSE: 
-  - R2: 6.5 - 8%
+  - RMSE: 20.38
+  - MSE: 415.63
+  - R2: 7-8% *varies from one run to another
 
 - Results - 40K Test
-  - RMSE: 6.5
-  - MSE:
-  - R2:
+  - RMSE: 45.76
+  - MSE: 2094.17
+  - R2: 2.3%
 
 - Results - 200K Test
-  - RMSE:
-  - MSE:
-  - R2:
+  - RMSE: 48.39
+  - MSE: 2342.37
+  - R2: 1.6%
 <br/><br/>
 
 - Jan 2020 data
